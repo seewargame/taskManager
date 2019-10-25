@@ -9,7 +9,7 @@ export default function TaskManager(props) {
     const [isClicked, setIsClicked] = useState(false)
 
     function fetchData() {
-        fetch('http://localhost:4000/tasks')
+        fetch('https://my-json-server.typicode.com/seewargame/mydbfiles/tasks')
             .then(res => res.json())
             .then((data) => {
                 setTasks(data)
